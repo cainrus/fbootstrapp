@@ -972,7 +972,7 @@ input[type=submit].btn {
 // POPOVERS
 // --------
 #popoverdouble {
-  .above(@arrowWidth: 5px, @arrowColor: @black) {
+  .above(@arrowWidth: 5px, @arrowColor: @black, @offset: 0px) {
     bottom: 0;
     left: 50%;
     margin-left: -@arrowWidth;
@@ -990,7 +990,7 @@ input[type=submit].btn {
     border-left: @arrowWidth solid @arrowColor;
     content: ' ';
   }
-  .below(@arrowWidth: 5px, @arrowColor: @black) {
+  .below(@arrowWidth: 5px, @arrowColor: @black, @offset: 0px) {
     top: 0;
     left: 50%;
     margin-left: -@arrowWidth;
@@ -999,7 +999,7 @@ input[type=submit].btn {
     border-bottom: @arrowWidth solid @arrowColor;
     content: ' ';
   }
-  .right(@arrowWidth: 5px, @arrowColor: @black) {
+  .right(@arrowWidth: 5px, @arrowColor: @black, @offset: 0px) {
     top: 50%;
     left: 0;
     margin-top: -@arrowWidth;
